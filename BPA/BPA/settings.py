@@ -28,6 +28,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+STATICFILES_DIRS = [
+    'BPA/blog/static',
+
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -56,7 +62,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR/'blog'/'templates/html'],
+            BASE_DIR/'blog'/'templates/html',
+            'static'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
