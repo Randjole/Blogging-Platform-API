@@ -3,9 +3,25 @@
 
 {% block title %}
 
-Blogging MY
+Blogging API
 
 {% endblock %}
+
+{% block content %}
+
+<section id ='welcome'>
+    <header>
+    <h2>Blogging</h2>
+    </heade>
+</section>
+
+<section id ='latest-posts'>
+    <h2>Povi post</h2>
+    <ul>
+    {% for post in posts %}
+    {% endfor %}
+    </ul>
+{% endblock %}    
 
 
 
