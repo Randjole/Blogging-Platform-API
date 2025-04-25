@@ -1,7 +1,10 @@
 body {
-    color: blue;
-  }
+  background-attachment: fixed;
+  color: green;
+}
 
-h1 {
-    color: green;
-  }
+.myDiv {
+  border: solid 3px;
+  padding: 1em;
+  max-width: 75%;
+}
